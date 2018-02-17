@@ -68,12 +68,8 @@ const octokit = require('@octokit/rest')({
   protocol: 'https',
   port: 433,
 
-  // advanced request options
-  // see https://nodejs.org/api/http.html
-  proxy: undefined,
-  ca: undefined,
-  rejectUnauthorized: undefined,
-  family: undefined
+  // Node only: advanced request options can be passed as http(s) agent
+  agent: undefined
 })
 ```
 
